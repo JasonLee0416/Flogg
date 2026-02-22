@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "Flogg",
+    "slug": "flogg",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.flogg.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000000"
+      },
+      "package": "com.flogg.app",
+      "permissions": ["android.permission.CAMERA"]
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "인수증 촬영을 위해 카메라 접근이 필요합니다." }]
+    ]
+  }
+}
